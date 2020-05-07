@@ -28,7 +28,12 @@
 
 
 
- <h4>Your score is <%= @results[:score] %> </h4>
+ <h4 class="mt-4">Your score is <%= @results[:score] %> </h4>
+
+
+ <%= link_to "Play again!", root_path, class: "btn btn-warning mt-3" %>
+
+
 </div>
 
 
