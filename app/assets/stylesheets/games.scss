@@ -1,0 +1,21 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+ .letter-grid {
+  background-color: #cc3f0c;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.letter-grid:hover {
+ background-color: #7c1905;
+}
+
+.user_answer {
+  color: #cc3f0c;
+}

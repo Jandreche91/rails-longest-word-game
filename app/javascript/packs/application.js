@@ -14,3 +14,8 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+const userGuess = document.getElementById("user-guess");
+
+
+userGuess.innerText="Hello";

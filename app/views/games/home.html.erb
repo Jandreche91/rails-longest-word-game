@@ -1,0 +1,52 @@
+
+
+<div class="container text-center mt-3">
+
+<h1>Welcome to the longest word game!</h1>
+<% start_time = Time.now %>
+
+<h2 class="mt-4">Here is your grid:</h2>
+<p>(Select the letters you want to use to form a word)</p>
+
+  <div class="d-flex justify-content-around">
+
+    <% @sample_letters.each do |letter| %>
+    <p class="letter-grid mt-3"><%= letter.capitalize %></p>
+    <% end %>
+  </div>
+
+  <div class="container">
+
+
+    <h3 class="my-4">Your Guess:</h3>
+
+
+    <form action="/score" method="POST">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :start_time, start_time  %>
+      <%= hidden_field_tag :letters_array, @sample_letters  %>
+
+      <input type="text" class="form-control" placeholder="What's on your mind?" name="user_guess">
+      <input type="submit" class="btn btn-warning mt-4">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+</div>
+
+

@@ -1,0 +1,44 @@
+
+
+<div class="container text-center mt-3">
+
+  <h2>with these letters:</h2>
+
+  <div class="d-flex justify-content-around">
+
+
+    <% @letters_array.each do |letter| %>
+    <p class="letter-grid mt-3"><%= letter.capitalize %></p>
+    <% end %>
+
+  </div>
+
+  <h2>You guessed:</h2>
+
+
+
+  <h3 class="user_answer"><%= @attempt.capitalize %></h3>
+
+
+  <p>(it took you <%= @results[:time].floor %> seconds)</p>
+
+
+<h4><%= @results[:message]%></h4>
+
+
+
+
+ <h4>Your score is <%= @results[:score] %> </h4>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
